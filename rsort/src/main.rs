@@ -55,13 +55,20 @@ fn merge_sort<T: PartialOrd + Clone>(unsorted: &Vec<T>) -> Vec<T> {
 }
 
 fn read_file(fname: &String) -> Vec<String> {
-    let input = File::open(&fname).unwrap();
     let mut contents = Vec::new();
 
-    for line in BufReader::new(input).lines() {
-        contents.push(line.unwrap());
+    match File::open(&fname){
+        Ok(input) => {    
+            for line in BufReader::new(input).lines() {
+            contents.push(line.unwrap());
+            };
+        },
+        Err(e) => {
+            println!("rsort: open failed: {}: {}", fname, e);
+        },
     };
 
+    // empty vec will be returned in case of error.
     contents
 
 }
@@ -77,4 +84,10 @@ fn main() {
     for line in &result {
         println!("{}", line);
     }
+}
+
+
+#[test]
+fn test_basic() {
+    assert_eq!(merge_sort(&vec!["world", "hello"]), vec!["hello", "world"]);
 }
