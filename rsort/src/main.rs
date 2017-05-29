@@ -1,7 +1,72 @@
 use std::env;
+use std::process;
 use std::fs::File;
 use std::cmp::Ordering;
 use std::io::{BufReader, BufRead};
+
+
+const HELP: &'static str = r#"
+NAME
+       rsort - sort lines of text files
+
+SYNOPSIS
+       rsort [OPTION]... [FILE]...
+
+DESCRIPTION
+       Write sorted concatenation of all FILE(s) to standard output.
+
+       Mandatory  arguments  to  long  options are mandatory for short options
+       too.  Ordering options:
+
+       -r, --reverse
+              reverse the result of comparisons
+
+       -c, --check
+              check whether input is sorted; do not sort
+
+       -m, --merge
+              merge already sorted files; do not sort
+
+       -o, --output=FILE
+              write result to FILE instead of standard output
+
+       -u, --unique
+              with  -c, check for strict ordering; without -c, output only the
+              first of an equal run
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+AUTHOR
+       Written by Matt Gathu
+
+
+"#;
+
+#[derive(Debug)]
+struct Args {
+    reverse: bool,
+    check: bool,
+    merge: bool,
+    unique: bool,
+    help: bool,
+    version: bool,
+}
+
+fn parse_args(args: &Vec<String>) -> Args {
+    let pargs = Args {
+        reverse: args.contains(&"--reverse".to_string()),
+        check: args.contains(&"--check".to_string()),
+        merge: args.contains(&"--merge".to_string()),
+        unique: args.contains(&"--unique".to_string()),
+        help: args.contains(&"--help".to_string()),
+        version: args.contains(&"--version".to_string()),
+    };
+
+    pargs
+}
 
 fn merge<T: PartialOrd + Clone>(left: &Vec<T>, right: &Vec<T>) -> Vec<T> {
     let mut result: Vec<T> = Vec::new();
@@ -74,12 +139,38 @@ fn read_file(fname: &String) -> Vec<String> {
 }
 
 fn main() {
+
     let args: Vec<String> = env::args().collect();
-    let fname = &args[1];
+
+    let pargs = parse_args(&args);
+
+    match args.len() {
+        1 => {
+            println!("rsort: no arguments passed!!");
+            return;
+        },
+        _ => {},
+    };
+
+    let fname = &args.last().unwrap();
+
+    if pargs.help {
+        println!("{}", HELP);
+        process::exit(0);
+    }
+
+    if pargs.check || pargs.merge {
+        println!("Not implemented");
+        process::exit(0);
+    }
 
     let unsorted = read_file(&fname);
 
-    let result = merge_sort(&unsorted);
+    let mut result = merge_sort(&unsorted);
+
+    if pargs.reverse {
+        result.reverse();
+    }
     
     for line in &result {
         println!("{}", line);
