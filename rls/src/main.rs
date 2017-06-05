@@ -21,8 +21,9 @@ fn main() {
              .help("Reverse the order of the sort"))
         .arg(Arg::with_name("s")
              .short("s")
-             .help("Display the number of file system blocks actually used by each
-file, in units of 512 bytes."))
+             .help("Display the number of file system blocks actually used by each file."))
+        .arg(Arg::with_name("file")
+             .help("file"))
         .get_matches();
 
     let inode = matches.is_present("i");
@@ -80,5 +81,8 @@ file, in units of 512 bytes."))
                       one);
         }
     }
-    println!();
+
+    if !one {
+        println!();
+    }
 }
