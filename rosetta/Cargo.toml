@@ -1,0 +1,11 @@
+[package]
+name = "rosetta"
+version = "0.1.0"
+authors = ["Matt Gathu <mattgathu@gmail.com>"]
+
+[dependencies]
+
+
+[[bin]]
+name = "factorial"
+path = "src/bin/factorial.rs"
