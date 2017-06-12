@@ -9,3 +9,7 @@ authors = ["Matt Gathu <mattgathu@gmail.com>"]
 [[bin]]
 name = "factorial"
 path = "src/bin/factorial.rs"
+
+[[bin]]
+name = "ackermann"
+path = "src/bin/ackermann.rs"
