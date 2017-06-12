@@ -13,3 +13,7 @@ path = "src/bin/factorial.rs"
 [[bin]]
 name = "ackermann"
 path = "src/bin/ackermann.rs"
+
+[[bin]]
+name = "fibonacci"
+path = "src/bin/fibonacci.rs"
