@@ -17,3 +17,7 @@ path = "src/bin/ackermann.rs"
 [[bin]]
 name = "fibonacci"
 path = "src/bin/fibonacci.rs"
+
+[[bin]]
+name = "bitwiseio"
+path = "src/bin/bitwiseio.rs"
