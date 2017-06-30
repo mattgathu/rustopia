@@ -3,7 +3,6 @@
 My Rust Journal
 
 ## Rosetta
---
 
 Solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in rust.
 
@@ -14,7 +13,6 @@ Solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in rust.
 
 
 ## Shell tools
---
 
 Naive implementations of unix shell commands in rust.
 
@@ -25,4 +23,3 @@ Naive implementations of unix shell commands in rust.
 
 
 ## Web
---
