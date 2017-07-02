@@ -1,0 +1,41 @@
+[package]
+name = "rustopia"
+version = "0.1.0"
+authors = ["Matt Gathu <mattgathu@gmail.com>"]
+
+[dependencies]
+clap = "2.24.2"
+libc = "0.2.23"
+
+[[bin]]
+name = "factorial"
+path = "rosetta/src/bin/factorial.rs"
+
+[[bin]]
+name = "ackermann"
+path = "rosetta/src/bin/ackermann.rs"
+
+[[bin]]
+name = "fibonacci"
+path = "rosetta/src/bin/fibonacci.rs"
+
+[[bin]]
+name = "bitwiseio"
+path = "rosetta/src/bin/bitwiseio.rs"
+
+[[bin]]
+name = "rcal"
+path = "shelltools/src/bin/rcal.rs"
+
+[[bin]]
+name = "rcat"
+path = "shelltools/src/bin/rcat.rs"
+
+[[bin]]
+name = "rls"
+path = "shelltools/src/bin/rls.rs"
+
+[[bin]]
+name = "rsort"
+path = "shelltools/src/bin/rsort.rs"
+

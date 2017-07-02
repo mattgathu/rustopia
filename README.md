@@ -1,5 +1,7 @@
 # Road to Rustopia
 
+[![Build Status](https://travis-ci.org/mattgathu/rustopia.svg?branch=master)](https://travis-ci.org/mattgathu/rustopia)
+
 My Rust Journal
 
 ## Rosetta
@@ -16,10 +18,10 @@ Solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in rust.
 
 Naive implementations of unix shell commands in rust.
 
-* [rcal](shelltools/rcal/src/main.rs): *cal* command in rust.
-* [rcat](shelltools/rcat/src/main.rs): *cat* command in rust.
-* [rls](shelltools/rls/src/main.rs): *ls* command in rust.
-* [rsort](shelltools/rsort/src/main.rs): *sort* command in rust.
+* [rcal](shelltools/src/bin/rcal.rs): *cal* command in rust.
+* [rcat](shelltools/src/bin/rcat.rs): *cat* command in rust.
+* [rls](shelltools/src/bin/rls.rs): *ls* command in rust.
+* [rsort](shelltools/src/bin/rsort.rs): *sort* command in rust.
 
 
 ## Web
