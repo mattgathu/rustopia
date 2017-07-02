@@ -1,7 +1,0 @@
-[package]
-name = "rcal"
-version = "0.1.0"
-authors = ["Matt Gathu <mattgathu@gmail.com>"]
-
-[dependencies]
-libc = "0.2.23"
