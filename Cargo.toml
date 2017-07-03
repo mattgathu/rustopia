@@ -9,19 +9,19 @@ libc = "0.2.23"
 
 [[bin]]
 name = "factorial"
-path = "rosetta/src/bin/factorial.rs"
+path = "rosetta/factorial.rs"
 
 [[bin]]
 name = "ackermann"
-path = "rosetta/src/bin/ackermann.rs"
+path = "rosetta/ackermann.rs"
 
 [[bin]]
 name = "fibonacci"
-path = "rosetta/src/bin/fibonacci.rs"
+path = "rosetta/fibonacci.rs"
 
 [[bin]]
 name = "bitwiseio"
-path = "rosetta/src/bin/bitwiseio.rs"
+path = "rosetta/bitwiseio.rs"
 
 [[bin]]
 name = "sieve"
@@ -29,17 +29,17 @@ path = "rosetta/sieve_of_eratosthenes.rs"
 
 [[bin]]
 name = "rcal"
-path = "shelltools/src/bin/rcal.rs"
+path = "shelltools/rcal.rs"
 
 [[bin]]
 name = "rcat"
-path = "shelltools/src/bin/rcat.rs"
+path = "shelltools/rcat.rs"
 
 [[bin]]
 name = "rls"
-path = "shelltools/src/bin/rls.rs"
+path = "shelltools/rls.rs"
 
 [[bin]]
 name = "rsort"
-path = "shelltools/src/bin/rsort.rs"
+path = "shelltools/rsort.rs"
 

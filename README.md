@@ -8,10 +8,10 @@ My Rust Journal
 
 Solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in rust.
 
-* [ackermann](rosetta/src/bin/ackermann.rs)
-* [bitwiseio](rosetta/src/bin/bitwiseio.rs)
-* [factorial](rosetta/src/bin/factorial.rs)
-* [fibonacci](rosetta/src/bin/fibonacci.rs)
+* [ackermann](rosetta/ackermann.rs)
+* [bitwiseio](rosetta/bitwiseio.rs)
+* [factorial](rosetta/factorial.rs)
+* [fibonacci](rosetta/fibonacci.rs)
 * [sieve of eratosthenes](rosetta/sieve_of_eratosthenes.rs)
 
 
@@ -19,10 +19,10 @@ Solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in rust.
 
 Naive implementations of unix shell commands in rust.
 
-* [rcal](shelltools/src/bin/rcal.rs): *cal* command in rust.
-* [rcat](shelltools/src/bin/rcat.rs): *cat* command in rust.
-* [rls](shelltools/src/bin/rls.rs): *ls* command in rust.
-* [rsort](shelltools/src/bin/rsort.rs): *sort* command in rust.
+* [rcal](shelltools/rcal.rs): *cal* command in rust.
+* [rcat](shelltools/rcat.rs): *cat* command in rust.
+* [rls](shelltools/rls.rs): *ls* command in rust.
+* [rsort](shelltools/rsort.rs): *sort* command in rust.
 
 
 ## Web
