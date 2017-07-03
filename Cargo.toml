@@ -24,6 +24,10 @@ name = "bitwiseio"
 path = "rosetta/src/bin/bitwiseio.rs"
 
 [[bin]]
+name = "sieve"
+path = "rosetta/sieve_of_eratosthenes.rs"
+
+[[bin]]
 name = "rcal"
 path = "shelltools/src/bin/rcal.rs"
 
