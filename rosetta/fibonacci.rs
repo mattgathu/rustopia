@@ -15,9 +15,21 @@ fn fib(n: i64) -> i64 {
     }
 }
 
+fn fib_nth(n: i64) -> i64 {
+    let mut cnt = 1;
+    let mut a_b = (0, 1); 
+
+    while cnt <= n {
+        a_b = (a_b.1, a_b.0 + a_b.1); 
+        cnt += 1;
+    }
+
+    a_b.1
+}
 
 fn main() {
     println!("fib(5): {}", fib(5));
+    println!("fib_nth(5): {}", fib_nth(5));
 }
 
 
@@ -31,4 +43,11 @@ fn test_fib() {
     assert_eq!(fib(6), 8);
     assert_eq!(fib(7), 13);
     assert_eq!(fib(9), 34);
+}
+
+#[test]
+fn test_fib_nth() {
+    assert_eq!(fib_nth(5), 8);
+    assert_eq!(fib_nth(6), 13);
+    assert_eq!(fib_nth(8), 34);
 }
