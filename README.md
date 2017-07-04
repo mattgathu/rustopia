@@ -24,6 +24,7 @@ Naive implementations of unix shell commands in rust.
 * [rhead](shelltools/rhead.rs): *head* command in rust.
 * [rls](shelltools/rls.rs): *ls* command in rust.
 * [rsort](shelltools/rsort.rs): *sort* command in rust.
+* [rtail](shelltools/rtail.rs): *tail* command in rust.
 
 
 ## Web

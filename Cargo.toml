@@ -47,3 +47,7 @@ path = "shelltools/rsort.rs"
 name = "rhead"
 path = "shelltools/rhead.rs"
 
+[[bin]]
+name = "rtail"
+path = "shelltools/rtail.rs"
+
