@@ -21,6 +21,7 @@ Naive implementations of unix shell commands in rust.
 
 * [rcal](shelltools/rcal.rs): *cal* command in rust.
 * [rcat](shelltools/rcat.rs): *cat* command in rust.
+* [rhead](shelltools/rhead.rs): *head* command in rust.
 * [rls](shelltools/rls.rs): *ls* command in rust.
 * [rsort](shelltools/rsort.rs): *sort* command in rust.
 
