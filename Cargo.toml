@@ -43,3 +43,7 @@ path = "shelltools/rls.rs"
 name = "rsort"
 path = "shelltools/rsort.rs"
 
+[[bin]]
+name = "rhead"
+path = "shelltools/rhead.rs"
+
