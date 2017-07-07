@@ -17,9 +17,12 @@ name = "factorial"
 path = "rosetta/factorial.rs"
 
 [[bin]]
+name = "hamming"
+path = "rosetta/hamming.rs"
+
+[[bin]]
 name = "https"
 path = "rosetta/https.rs"
-
 
 [[bin]]
 name = "http"
