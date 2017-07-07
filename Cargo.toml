@@ -11,10 +11,16 @@ tokio-core = "0.1.6"
 hyper = "0.11.1"
 curl = "0.4.7"
 reqwest = "0.6.2"
+chan-signal = "0.2.0"
+chan = "0.1.19"
 
 [[bin]]
 name = "factorial"
 path = "rosetta/factorial.rs"
+
+[[bin]]
+name = "handle_signal"
+path = "rosetta/handle_signal.rs"
 
 [[bin]]
 name = "hamming"

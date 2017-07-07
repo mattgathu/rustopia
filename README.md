@@ -13,6 +13,7 @@ Solving [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code) tasks in rust.
 * [factorial](rosetta/factorial.rs)
 * [fibonacci](rosetta/fibonacci.rs)
 * [hamming](rosetta/hamming.rs)
+* [handle a signal](rosetta/handle_signal.rs)
 * [http](rosetta/http.rs)
 * [https](rosetta/https.rs)
 * [sieve of eratosthenes](rosetta/sieve_of_eratosthenes.rs)
