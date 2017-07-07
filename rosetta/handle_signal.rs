@@ -32,9 +32,7 @@ fn main() {
             println!("\nreceived signal: {:?}", signal.unwrap());
             println!("Execution took {} secs", now.elapsed().as_secs());
         },
-        rdone.recv() => {
-            println!("received ");
-        }
+        rdone.recv() => {}
     }
 }
 
