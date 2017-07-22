@@ -31,4 +31,13 @@ Naive implementations of unix shell commands in rust.
 * [rtail](shelltools/rtail.rs): *tail* command in rust.
 
 
-## Web
+    
+## Crates
+
+* [cute](https://github.com/mattgathu/cute): *A macro for Python-like comprehensions*
+
+
+## Blogs Read
+
+
+## Blogs Written
